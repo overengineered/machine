@@ -4,9 +4,6 @@ set --export REACT_EDITOR code
 set PATH $PATH $ANDROID_HOME/tools $ANDROID_HOME/platform-tools
 
 
-bind \t forward-word
-
-
 function launch_emulator --description "launches Android emulator in the background with outputs redirected to /dev/null"
 	begin
         fish -c "~/Library/Android/sdk/tools/emulator $argv &"
